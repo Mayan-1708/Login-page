@@ -1,0 +1,71 @@
+.profile-container {
+  background-color: #f0f0f0;
+  background-image: url(https://cdn.theatlantic.com/assets/media/img/mt/2015/06/rbow-1/lead_960.jpg?1435518405);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  /* Centering with flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Adjust height as needed */
+  width: 100%;
+  /* Adjust width as needed */
+  margin: 0;
+  /* Center horizontally */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-container {
+  color: #333;
+  font-size: 100px;
+  /* Increase font size */
+  margin: 0;
+}
+
+h2 {
+  color: white;
+  font-size: 50px;
+  /* Increase font size */
+  margin-bottom: 20px;
+}
+
+.profile-details {
+  background-color: beige;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  /* Limit width for better readability */
+  width: 100%;
+  /* Take full width of its container */
+}
+
+.profile-details p {
+  color: #555;
+  font-size: 18px;
+  /* Increase font size */
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.profile-details p strong {
+  color: #333;
+}
+
+.profile-pic {
+  float: right;
+  width: 200px;
+  /* Increase profile picture size */
+  height: 200px;
+  border-radius: 80%;
+  margin-top: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,98 @@
+/* Colorful Theme Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffefd5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff5ee;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #d2691e;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #8b4513;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cd853f;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ffe4e1;
+  color: #8b4513;
+}
+
+.form-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+.form-group input[type="file"] {
+  padding: 5px 0;
+  color: #8b4513;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 5px;
+  color: #8b4513;
+}
+
+button[type="button"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="button"]:hover {
+  background-color: #e55347;
+}
+
+.anchortag {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.anchortag a {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+.anchortag a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: #ff4500;
+  font-size: 14px;
+}

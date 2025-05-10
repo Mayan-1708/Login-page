@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="auth-form">
+      <h2>Sign Up</h2>
+      <form >
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" [(ngModel)]="signUpData.username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" [(ngModel)]="signUpData.email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" [(ngModel)]="signUpData.password" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" [(ngModel)]="signUpData.dob" required>
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+          <div>
+            <label><input type="radio" name="gender" value="male" [(ngModel)]="signUpData.gender" required> Male</label>
+            <label><input type="radio" name="gender" value="female" [(ngModel)]="signUpData.gender" required> Female</label>
+            <label><input type="radio" name="gender" value="other" [(ngModel)]="signUpData.gender" required> Other</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="profilePic">Profile Picture</label>
+          <input type="file" id="profilePic" name="profilePic" (change)="onFileChange($event)" required>
+          <p *ngIf="profilepicMessage">{{profilepicMessage}}</p>
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country" [(ngModel)]="signUpData.country" required>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="India">India</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" [(ngModel)]="signUpData.phone"  required>
+          <small>Format: 123-456-7890</small>
+        </div>
+        <div class="form-group">
+          <label><input type="checkbox" name="terms" [(ngModel)]="signUpData.terms" required> I agree to the terms and conditions</label>
+        </div>
+        <button type="button" (click)="onSignup()">Sign Up</button>
+      </form>
+      <div class="anchortag">
+<a routerLink="/indexpage">Want to go back to Sign in?</a>
+      </div>
+      <p *ngIf="signUpMessage">{{signUpMessage}}</p>
+    </div>
+  
+    <!-- <div class="auth-form">
+      <h2>Login</h2>
+      <form #loginForm="ngForm">
+        <div class="form-group">
+          <label for="loginUsername">Username</label>
+          <input type="text" id="loginUsername" name="loginUsername" [(ngModel)]="loginData.username" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" name="loginPassword" [(ngModel)]="loginData.password" required>
+        </div>
+        <button type="button" (click)="onLogin(loginForm)" >Login</button>
+      </form>
+      <p *ngIf="loginMessage">{{loginMessage}}</p>
+    </div> -->
+  </div>
+  
+</body>
+</html>
